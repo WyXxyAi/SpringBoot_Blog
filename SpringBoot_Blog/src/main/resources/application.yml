@@ -1,0 +1,36 @@
+#tomcat
+server:
+  port: 8888
+#spring
+spring:
+  application:
+    name: design_blog
+  #mysql
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: wany.
+  #redis
+  redis:
+    host: 150.158.165.76
+    port: 6379
+    password: wanylxxy
+  #mail
+  mail:
+    username: 1254106926@qq.com
+    password: jsgfkmibupfahjjf
+    host: smtp.qq.com
+    #qq需要开启
+    properties: { mail.smtp.ssl.enable: true }
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      table-prefix: wyblogdemo_
+
+qiniu:
+  accessKey: YsKm4wo95Bk-TFiCNE4DKulsVZ0A7yc6qb0ZI_f1
+  accessSecretKey: Uotyz-lorCMzJoEfAnJsHBDmq9h557zBLhkXpRDP
